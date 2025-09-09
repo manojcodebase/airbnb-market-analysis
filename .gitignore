@@ -1,0 +1,19 @@
+# envs & caches
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+# secrets
+.env
+
+# data (keep only small samples)
+data/*.csv
+data/*.parquet
+!data/sample_*.csv
+
+# figures (keep only hand-picked screenshots)
+notebooks/figures/*
+!notebooks/figures/preview_*.png
+!notebooks/figures/README.md
